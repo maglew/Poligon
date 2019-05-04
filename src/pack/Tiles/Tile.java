@@ -12,8 +12,8 @@ public class Tile
     public  static Tile dirttile=new DirtTile(2);
     ///
 
-public static final int width=64;
-    public static final int height=64;
+public static final int tilewidth=64;
+    public static final int tileheight=64;
     protected BufferedImage texture;
     protected  int id=0;
 
@@ -41,6 +41,6 @@ public static final int width=64;
 
     public void render(Graphics g,int x, int y)
     {
-g.drawImage(texture,x,y,width,height,null);
+g.drawImage(texture,x,y,tilewidth,tileheight,null);
     }
 }

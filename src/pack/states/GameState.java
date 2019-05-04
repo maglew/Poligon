@@ -1,18 +1,20 @@
 package pack.states;
 
-import java.awt.Graphics;
+import java.awt.*;
 
 import pack.Game;
 import pack.Tiles.Tile;
+import pack.classes.World;
 import pack.entities.creatures.Player;
 
 public class GameState extends State {
 	
 	private Player player;
-	
+	private World world;
 	public GameState(Game game){
 		super(game);
 		player = new Player(game, 100, 100);
+		world=new World("");
 	}
 	
 	@Override
@@ -22,8 +24,10 @@ public class GameState extends State {
 
 	@Override
 	public void render(Graphics g) {
+
+		//Tile.tiles[0].render(g,0,0);
+		world.render(g);
 		player.render(g);
-		Tile.tiles[0].render(g,0,0);
 	}
 
 }
