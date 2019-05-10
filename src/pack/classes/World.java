@@ -1,18 +1,21 @@
 package pack.classes;
 
+import pack.Game;
 import pack.Tiles.Tile;
 
 import java.awt.*;
 
 public class World
 {
+    private Game game;
 private int width,height;
 private int[][] tiles;
 private int spawnX,spawnY;
 
-public World(String path)
+public World(Game game,String path)
 {
-loadWorld(path);
+this.game=game;
+    loadWorld(path);
 }
 
     public void tick()
@@ -24,11 +27,17 @@ loadWorld(path);
 
     public void render(Graphics g)
     {
-        for(int y=0;y<height;y++)
+        int xStart=(int)Math.max(0,game.getGameCamera().getXoffset()/Tile.tilewidth);
+        int xEnd=(int)Math.min(width,(game.getGameCamera().getXoffset()+game.getWidth())/Tile.tilewidth+1);
+        int yStart=(int)Math.max(0,game.getGameCamera().getYoffset()/Tile.tileheight);
+        int yEnd=(int)Math.min(height,(game.getGameCamera().getYoffset()+game.getHeight())/Tile.tileheight+1);
+
+        for(int y=yStart;y<yEnd;y++)
         {
-            for(int x=0;x<width;x++)
+            for(int x=xStart;x<xEnd;x++)
             {
-                getTile(x,y).render(g,x*Tile.tilewidth,y*Tile.tileheight);
+                getTile(x,y).render(g,(int)(x*Tile.tilewidth-game.getGameCamera().getXoffset()),
+                        (int)(y*Tile.tileheight-game.getGameCamera().getYoffset()));
             }
         }
     }
