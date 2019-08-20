@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="fb26519b-f0c7-4dd7-b93f-81f526263917" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poligon/META-INF/Poligon.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/META-INF/Poligon.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/classes/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/classes/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/entities/creatures/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/GameCamera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/GameCamera.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/states/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/states/MenuState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pack/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pack/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/classes/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/classes/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/entities/creatures/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/gfx/GameCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/gfx/GameCamera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pack/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/states/MenuState.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565359418587</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="23+menu+statechange+mousecontrol(29)">
+      <created>1566309009721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566309009721</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="23" />
-    <option name="LAST_COMMIT_MESSAGE" value="23" />
+    <MESSAGE value="23+menu+statechange+mousecontrol(29)" />
+    <option name="LAST_COMMIT_MESSAGE" value="23+menu+statechange+mousecontrol(29)" />
   </component>
 </project>

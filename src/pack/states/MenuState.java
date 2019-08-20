@@ -20,8 +20,12 @@ public  Rectangle playbutton=new Rectangle(250,120,155,40);
 	{
 //System.out.println(handler.getMouseManager().mouseX+" "+handler.getMouseManager().mouseY);
 		if(handler.getMouseManager().left&&handler.getMouseManager().getMouseX()>=250&&handler.getMouseManager().getMouseX()<=405
-				&&handler.getMouseManager().getMouseY()>=120&&handler.getMouseManager().getMouseY()<=140)
+				&&handler.getMouseManager().getMouseY()>=120&&handler.getMouseManager().getMouseY()<=160)
 		{State.setState(handler.getGame().gameState);}
+
+		else if(handler.getMouseManager().left&&handler.getMouseManager().getMouseX()>=250&&handler.getMouseManager().getMouseX()<=405
+				&&handler.getMouseManager().getMouseY()>=240&&handler.getMouseManager().getMouseY()<=280)
+		{handler.getGame().stop();}
 	}
 
 	@Override
