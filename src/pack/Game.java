@@ -7,6 +7,7 @@ import pack.display.Display;
 import pack.gfx.Assets;
 import pack.gfx.GameCamera;
 import pack.input.KeyManager;
+import pack.input.MouseManager;
 import pack.states.GameState;
 import pack.states.MenuState;
 import pack.states.State;
@@ -14,7 +15,7 @@ import pack.states.State;
 public class Game implements Runnable {
 
 	private Display display;
-	private int width, height;
+	public int width, height;
 	public String title;
 
 	private boolean running = false;
@@ -24,11 +25,12 @@ public class Game implements Runnable {
 	private Graphics g;
 
 	//States
-	private State gameState;
-	private State menuState;
+	public State gameState;
+	public State menuState;
 
 	//Input
 	private KeyManager keyManager;
+	private MouseManager mouseManager;
 
 	//Camera
 	private GameCamera gameCamera;
@@ -41,11 +43,16 @@ public class Game implements Runnable {
 		this.height = height;
 		this.title = title;
 		keyManager = new KeyManager();
+		mouseManager = new MouseManager();
 	}
 
 	private void init(){
 		display = new Display(title, width, height);
 		display.getFrame().addKeyListener(keyManager);
+		display.getFrame().addMouseListener(mouseManager);
+		display.getFrame().addMouseMotionListener(mouseManager);
+		display.getCanvas().addMouseListener(mouseManager);
+		display.getCanvas().addMouseMotionListener(mouseManager);
 		Assets.init();
 
 		gameCamera = new GameCamera(this, 0, 0);
@@ -53,11 +60,13 @@ public class Game implements Runnable {
 
 		gameState = new GameState(handler);
 		menuState = new MenuState(handler);
-		State.setState(gameState);
+		//State.setState(gameState);
+		State.setState(menuState);
 	}
 
 	private void tick(){
 		keyManager.tick();
+
 
 		if(State.getState() != null)
 			State.getState().tick();
@@ -120,6 +129,9 @@ public class Game implements Runnable {
 
 	public KeyManager getKeyManager(){
 		return keyManager;
+	}
+	public MouseManager getMouseManager(){
+		return mouseManager;
 	}
 
 	public GameCamera getGameCamera(){

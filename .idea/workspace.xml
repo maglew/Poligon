@@ -2,28 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb26519b-f0c7-4dd7-b93f-81f526263917" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/display/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/display/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/entities/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/entities/creatures/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/entities/creatures/Creature.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/entities/creatures/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/ImageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/ImageLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/SpriteSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/gfx/SpriteSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/input/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/input/KeyManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/states/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/Handler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/states/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/states/MenuState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poligon/pack/states/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poligon/pack/states/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pack/entities/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/entities/creatures/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/states/MenuState.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <excluded-from-favorite>
@@ -52,6 +50,11 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="maglew &lt;v.crav4uk@yandex.ru&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -109,6 +112,14 @@
       <option name="presentableId" value="Default" />
       <updated>1564739168929</updated>
     </task>
+    <task id="LOCAL-00001" summary="23">
+      <created>1565359418587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565359418587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,5 +134,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="23" />
+    <option name="LAST_COMMIT_MESSAGE" value="23" />
   </component>
 </project>

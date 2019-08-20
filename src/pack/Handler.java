@@ -3,6 +3,7 @@ package pack;
 import pack.classes.World;
 import pack.gfx.GameCamera;
 import pack.input.KeyManager;
+import pack.input.MouseManager;
 
 public class Handler {
 private Game game;
@@ -22,6 +23,9 @@ public int getWidth()
 
     public KeyManager getKeyManager()
     {return game.getKeyManager();}
+
+    public MouseManager getMouseManager()
+    {return game.getMouseManager();}
 
     public Game getGame() {
         return game;
